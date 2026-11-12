@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수강 과목</title>
+</head>
+<body>
+    <table border="2">
+        <caption>수강 과목 데이터</caption>
+        <thead>
+            <th>과목 코드</th>
+            <th>과목명</th>
+            <th>학점</th>
+            <th>요일</th>
+            <th>시간</th>
+            <th>정원</th>
+            <th>신청</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CS101</td>
+                <td>웹 프로그래밍 기초</td>
+                <td rowspan="2" style="text-align: center;">3</td>
+                <td>월</td>
+                <td rowspan="2">09:00-12:00</td>
+                <td rowspan="2" style="text-align: center;">30</td>
+                <td><a href="https://httpbin.org/get?course=CS101">
+          신청</a></td>
+            </tr>
+            <tr>
+                <td>CS102</td>
+                <td>자바 입문</td>
+                <td>화</td>
+                <td><a href="https://httpbin.org/get?course=CS102">
+          신청</a></td>
+            </tr>
+            <tr>
+                <td>DB201</td>
+                <td>데이터 베이스</td>
+                <td rowspan="2" style="text-align: center;">2</td>
+                <td>수</td>
+                <td rowspan="2">13:00-15:00</td>
+                <td rowspan="2" style="text-align: center;">25</td>
+                <td>
+                    <a href="https://httpbin.org/get?course=DB201">신청</a>
+                </td>
+            </tr>
+            <tr>
+                <td>cs103</td>
+                <td>알고리즘 기초</td>
+                <td>목</td>
+                <td>
+                    <a href="https://httpbin.org/get?course=CS103">신청</a>
+                </td>
+        </tbody>
+        <tfoot>
+            <td colspan="2" style="text-align: center;">총 학점</td>
+            <td colspan="5" style="text-align: center;">10</td>
+        </tfoot>
+    </table>
+</body>
+<hr>
+<footer>
+    <a href="index.html">처음으로</a>
+</footer>
+</html>
