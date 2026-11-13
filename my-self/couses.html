@@ -8,25 +8,24 @@
 <body>
     <main>
         <h1>수강 과목</h1>
-        <section>
-            <article>
-                <a href="index.html">처음으로</a>
-                <br>
-                <a href="about.html">자기소개</a>
-            </article>
-        </section>
+        <div>
+            <a href="index.html">처음으로</a> <br>
+            <a href="about.html">자기소개</a>
+        </div>
     </main>
     <hr>
-    <table border="2">
+    <table style="border:2px">
         <caption>수강 과목 데이터</caption>
         <thead>
-            <th>과목 코드</th>
-            <th>과목명</th>
-            <th>학점</th>
-            <th>요일</th>
-            <th>시간</th>
-            <th>정원</th>
-            <th>신청</th>
+            <tr>
+                <th>과목 코드</th>
+                <th>과목명</th>
+                <th>학점</th>
+                <th>요일</th>
+                <th>시간</th>
+                <th>정원</th>
+                <th>신청</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -36,15 +35,13 @@
                 <td>월</td>
                 <td rowspan="2">09:00-12:00</td>
                 <td rowspan="2" style="text-align: center;">30</td>
-                <td><a href="https://httpbin.org/get?course=CS101">
-          신청</a></td>
+                <td><a href="https://httpbin.org/get?course=CS101"> 신청</a></td>
             </tr>
             <tr>
                 <td>CS102</td>
                 <td>자바 입문</td>
                 <td>화</td>
-                <td><a href="https://httpbin.org/get?course=CS102">
-          신청</a></td>
+                <td><a href="https://httpbin.org/get?course=CS102"> 신청</a></td>
             </tr>
             <tr>
                 <td>DB201</td>
@@ -53,23 +50,22 @@
                 <td>수</td>
                 <td rowspan="2">13:00-15:00</td>
                 <td rowspan="2" style="text-align: center;">25</td>
-                <td>
-                    <a href="https://httpbin.org/get?course=DB201">신청</a>
-                </td>
+                <td> <a href="https://httpbin.org/get?course=DB201">신청</a> </td>
             </tr>
             <tr>
                 <td>cs103</td>
                 <td>알고리즘 기초</td>
                 <td>목</td>
-                <td>
-                    <a href="https://httpbin.org/get?course=CS103">신청</a>
-                </td>
+                <td> <a href="https://httpbin.org/get?course=CS103">신청</a> </td>
+            </tr>
         </tbody>
         <tfoot>
-            <td colspan="2" style="text-align: center;">총 학점</td>
-            <td colspan="5" style="text-align: center;">10</td>
+            <tr>
+                <td colspan="2" style="text-align: center;">총 학점</td>
+                <td colspan="5" style="text-align: center;">10</td>
+            </tr>
         </tfoot>
     </table>
+    <hr>
 </body>
-<hr>
 </html>
