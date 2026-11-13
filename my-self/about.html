@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,18 @@
     <hr>
     <main>
         <section>
+            <article>
+        <a href="index.html">처음으로</a>
+        <br>
+        <a href="couses.html">수강 과목</a>
+        <br>
+        <a href="#call">연락하기로 바로 가기</a>
+        <br>
+        <hr>
+        </article>
+        </section>
+        <section>
+            <article>
             <h2>L/H</h2>
             <ol>
                 <li>L</li>
@@ -25,11 +37,48 @@
                         <li>예의 없음</li>
                     </ul>
             </ol>
+            </article>
         </section>
+        <hr>
+        <aside id="call">
+            <h3>연락 하기</h3>
+            <form action="https://httpbin.org/post" method="post" target="_blank">
+                <p>
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="홍길동" required>
+                <br>
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="name@email.com" required>
+                <br>
+                <label for="tel">전화번호</label>
+                <input type="tel" id="tel" name="tel" placeholder="010-0000-0000">
+                <br>
+                <br>
+                <label for="me">문의 종류</label>
+                <select id="me" name="me">
+                    <option value="project">프로젝트 문의</option>
+                    <option value="DB">데이터 베이스 관련</option>
+                    <option value="ps">개인 사무용 연락</option>
+                </select>
+                <br>
+                <br>
+                <label for="memo">내용</label>
+                <br>
+                <textarea id="memo" name="memo" rows="4"></textarea>
+                </p>
+                <br>
+                <p>
+                    <button>보내기</button>
+                </p>
+            </form>
+        </aside>
     </main>
     <hr>
     <footer>
-        <a href="index.html">처음으로</a>
+        <p>&copy;
+            <a href="https://www.naver.com/" target="_blank">이지성
+            </a>
+        </p>
     </footer>
 </body>
 </html>
