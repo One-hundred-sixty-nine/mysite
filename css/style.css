@@ -1,61 +1,53 @@
-header 
+*, *:before, *:after
+   {
+      box-sizing: border-box;
+   }
+header
 {
-    background: #fff350b6;
-    color: black;
-    padding: 24px 16px;
-    font-size: 1.125rem;
-    letter-spacing: 0.05em;
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto;
+    border: 2px solid #d1c7b7;
+    background: #f3efe6;
+    flex-wrap: wrap;
+    gap: 12px;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgb(0,0,0);
+    padding: 10px 12px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    color: #382e2b;
+    
 }
-nav
+
+ul.move-page
 {
-    text-align: center;
-}
-nav ul
-{
+    display: flex;
+    gap: 12px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
-nav a
+.move
 {
-    display:inline-block;
-    color: black;
-    margin-bottom: 0.1px;
-    text-decoration: none;
+    list-style: none;
+
 }
-nav a:hover
+.move a
+{
+    text-decoration: none;
+    color: #a35c43;
+}
+.move a:hover
 {
     text-decoration: underline;
 }
-footer
+.call
 {
-    background: #a5ff50b6;
-    color: black;
-    padding: 1px 1px;
-    font-size: 1.125rem;
-    letter-spacing: 0.05em;
-    border-bottom: 1px solid rgb(96, 145, 51);
-    text-align:right;
-    border-top: 1px solid rgb(178, 190, 106);
+    border: 1px solid;
+    display: flex;
+    display: inline-block;
+    justify-content: end;
 }
-footer a
+main section
 {
-    color: black;
-}
-section
-{
-    border: 1px solid black;
-    margin: 10px;
-    padding: 0px 20px;
-}
-aside
-{
-    border: 1px solid black;
-    margin: 10px;
-    padding: 0px 20px;
+    border: 1px solid;
 }
