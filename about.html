@@ -8,6 +8,7 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 <body>
+<div class="wrap">
     <header>
             <h1>이지성의 자기소개</h1>
             <nav>
@@ -19,18 +20,25 @@
             </nav>
     </header>
     <main>
-        <div class="st">
+        <div class="call">
+                <a href="about.html#call">연락하러 가기</a>
+        </div>
+    <div class="all">
+        <div class="my">
+            <div>
+                <h2>자기소개</h2>
+            </div>
             <div class="ls">
-                <section>
-                    <h2>L/H</h2>
+                <section class="lh">
+                    <h3>L/H</h3>
                     <ol>
-                        <li>L 
+                        <li class="l">L 
                             <ul>
                                 <li>코딩</li>
                                 <li>게임</li>
                             </ul>
                         </li>
-                        <li>H 
+                        <li class="h">H 
                             <ul>
                                 <li>토마토</li>
                                 <li>예의 없음</li>
@@ -38,30 +46,32 @@
                         </li>
                     </ol>
                 </section>
-            </div>
-            <div class="call">
-                <a href="about.html#call">연락하러 가기</a>
+                <section class="tmi">
+                    <h3>TMI</h3>
+                    <ul>
+                        <li>MBTI : INTP</li>
+                    </ul>
+                </section>
             </div>
         </div>
             
-        
-        <aside id="call">
-            <h3>연락 하기</h3>
-            <form action="https://httpbin.org/post" method="post" target="_blank">
-                <p>
-                    <label for="name">이름</label><br>
+        <aside  id="call">
+            <h4>연락 하기</h4>
+            <form action="https://httpbin.org/post" method="post" target="_blank" class="tel">
+                <p class="name">
+                    <label for="name">이름</label>
                     <input type="text" id="name" name="name" placeholder="홍길동" required>
                 </p>
                 <p>
-                    <label for="email">이메일</label><br>
+                    <label for="email">이메일</label>
                     <input type="email" id="email" name="email" placeholder="name@email.com" required>
                 </p>
                 <p>
-                    <label for="tel">전화번호</label><br>
+                    <label for="tel">전화번호</label>
                     <input type="tel" id="tel" name="tel" placeholder="010-0000-0000">
                 </p>
                 <p>
-                    <label for="me">문의 종류</label><br>
+                    <label for="me">문의 종류</label>
                     <select id="me" name="me">
                         <option value="project">프로젝트 문의</option>
                         <option value="DB">데이터 베이스 관련</option>
@@ -69,7 +79,7 @@
                     </select>
                 </p>
                 <p>
-                    <label for="memo">내용</label><br>
+                    <label for="memo">내용</label>
                     <textarea id="memo" name="memo" rows="4"></textarea>
                 </p>
                 <p>
@@ -77,8 +87,9 @@
                 </p>
             </form>
         </aside>
+    </div>
     </main>
-
+</div>
     <footer>
         <p>&copy; 
             <a href="https://www.naver.com/" target="_blank">이지성</a>
