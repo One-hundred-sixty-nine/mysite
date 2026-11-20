@@ -302,6 +302,7 @@ footer
     margin-top: 12px;
     background-color: #f3efe6;
     border: 2px solid #d1c7b7;
+    text-align: right;
 }
 
 @media (max-width: 599px)
